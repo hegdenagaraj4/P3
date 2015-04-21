@@ -1,0 +1,39 @@
+fsck.c:64:23: error: pathnames.h: no such file or directory
+fsck.c:65:20: error: fsutil.h: no such file or directory
+fsck.c:66:24: error: exitvalues.h: no such file or directory
+fsck.c: In function 'main':
+fsck.c:102: error: 'FSCK_EXIT_OK' undeclared (first use in this function)
+fsck.c:102: error: (Each undeclared identifier is reported only once
+fsck.c:102: error: for each function it appears in.)
+fsck.c:114: error: 'CHECK_DEBUG' undeclared (first use in this function)
+fsck.c:118: error: 'CHECK_FORCE' undeclared (first use in this function)
+fsck.c:122: error: 'CHECK_NOFIX' undeclared (first use in this function)
+fsck.c:126: error: 'CHECK_PREEN' undeclared (first use in this function)
+fsck.c:130: error: 'CHECK_PROGRESS' undeclared (first use in this function)
+fsck.c:154: error: 'CHECK_VERBOSE' undeclared (first use in this function)
+fsck.c:223: error: 'FSCK_EXIT_CHECK_FAILED' undeclared (first use in this function)
+fsck.c:228: warning: passing argument 2 of 'checkfs' makes pointer from integer without a cast
+fsck.c:82: note: expected 'const char *' but argument is of type 'int'
+fsck.c: In function 'checkfs':
+fsck.c:266: error: '_PATH_SBIN' undeclared (first use in this function)
+fsck.c:267: error: '_PATH_USRSBIN' undeclared (first use in this function)
+fsck.c:304: error: 'CHECK_DEBUG' undeclared (first use in this function)
+fsck.c:304: error: 'CHECK_VERBOSE' undeclared (first use in this function)
+fsck.c:304: error: invalid operands to binary | (have 'const char **' and 'const char **')
+fsck.c:304: error: invalid operands to binary & (have 'int' and 'const char **')
+fsck.c:318: error: 'FSCK_EXIT_CHECK_FAILED' undeclared (first use in this function)
+fsck.c:318: warning: return makes integer from pointer without a cast
+fsck.c:344: error: invalid operands to binary & (have 'int' and 'const char **')
+fsck.c:345: error: 'FSCK_EXIT_OK' undeclared (first use in this function)
+fsck.c:345: warning: passing argument 1 of '_exit' makes integer from pointer without a cast
+/usr/include/unistd.h:122: note: expected 'int' but argument is of type 'const char **'
+fsck.c:376: warning: passing argument 1 of '_exit' makes integer from pointer without a cast
+/usr/include/unistd.h:122: note: expected 'int' but argument is of type 'const char **'
+fsck.c:386: warning: return makes integer from pointer without a cast
+fsck.c:391: warning: return makes integer from pointer without a cast
+fsck.c:400: warning: return makes integer from pointer without a cast
+fsck.c:405: warning: return makes integer from pointer without a cast
+fsck.c: In function 'usage':
+fsck.c:612: error: 'FSCK_EXIT_USAGE' undeclared (first use in this function)
+fsck.c:612: warning: passing argument 1 of 'exit' makes integer from pointer without a cast
+/usr/pkg/gcc44/lib/gcc/i386-pc-minix/4.4.6/include-fixed/stdlib.h:128: note: expected 'int' but argument is of type 'const char **'

@@ -1,0 +1,170 @@
+fsck.c:225:31: error: unknown type name 'int_t'
+int bitmapsize(bit_t nr_bits, int_t blk_size)
+                              ^
+fsck.c:241:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register level;
+  ~~~~~~~~ ^
+fsck.c:352:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register n = MFS_NAME_MAX;
+  ~~~~~~~~ ^
+fsck.c:386:19: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf(" (ino = %u, ", ftop->st_dir->d_inum);
+                        ~^     ~~~~~~~~~~~~~~~~~~~~
+                        %lu
+fsck.c:389:19: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf(" (ino = %u)", ftop->st_dir->d_inum);
+                        ~^    ~~~~~~~~~~~~~~~~~~~~
+                        %lu
+fsck.c:524:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register empty = 1;
+  ~~~~~~~~ ^
+fsck.c:546:27: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("ninodes       = %u", sb.s_ninodes);
+                                ~^   ~~~~~~~~~~~~
+                                %lu
+fsck.c:548:28: warning: conversion specifies type 'long' but the argument has type 'zone_t' (aka 'unsigned int') [-Wformat]
+        printf("nzones        = %ld", sb.s_zones);
+                                ~~^   ~~~~~~~~~~
+                                %u
+fsck.c:560:28: warning: conversion specifies type 'long' but the argument has type 'unsigned short' [-Wformat]
+        printf("block size    = %ld", sb.s_block_size);
+                                ~~^   ~~~~~~~~~~~~~~~
+                                %hu
+fsck.c:616:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register n;
+  ~~~~~~~~ ^
+fsck.c:696:18: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+                printf("inode %u:\n", ino);
+                              ~^      ~~~
+                              %lu
+fsck.c:701:27: warning: conversion specifies type 'long' but the argument has type 'i32_t' (aka 'int') [-Wformat]
+                printf("    size   = %6ld", ip->i_size);
+                                     ~~~^   ~~~~~~~~~~
+                                     %6d
+fsck.c:729:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register i;
+  ~~~~~~~~ ^
+fsck.c:744:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register i;
+  ~~~~~~~~ ^
+fsck.c:763:27: warning: conversion specifies type 'long' but the argument has type 'bit_t' (aka 'unsigned int') [-Wformat]
+                        printf("inode number %ld ", bit);
+                                             ~~^    ~~~
+                                             %u
+fsck.c:765:26: warning: conversion specifies type 'long' but the argument has type 'bit_t' (aka 'unsigned int') [-Wformat]
+                        printf("zone number %ld ", bit);
+                                            ~~^    ~~~
+                                            %u
+fsck.c:814:17: warning: conversion specifies type 'long' but the argument has type 'bit_t' (aka 'unsigned int') [-Wformat]
+                        printf("%s %ld is missing\n", type, bit);
+                                   ~~^                      ~~~
+                                   %u
+fsck.c:816:17: warning: conversion specifies type 'long' but the argument has type 'bit_t' (aka 'unsigned int') [-Wformat]
+                        printf("%s %ld is not free\n", type, bit);
+                                   ~~^                       ~~~
+                                   %u
+fsck.c:866:24: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+                        printf("mode inode %u not cleared", ino);
+                                           ~^               ~~~
+                                           %lu
+fsck.c:892:13: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+  printf("%5u %5u %5u", ino, (unsigned) inode.i_nlinks, count[ino]);
+          ~~^           ~~~
+          %5lu
+fsck.c:952:13: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+  printf("%6u ", ino);
+          ~~^    ~~~
+          %6lu
+fsck.c:975:27: warning: conversion specifies type 'long' but the argument has type 'i32_t' (aka 'int') [-Wformat]
+      default:  printf("%7ld ", ip->i_size);
+                        ~~~^    ~~~~~~~~~~
+                        %7d
+fsck.c:1040:27: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("%s is linked to %u ", printable_name, dp->d_inum);
+                                ~^                    ~~~~~~~~~~
+                                %lu
+fsck.c:1041:22: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("instead of %u)", exp);
+                           ~^    ~~~
+                           %lu
+fsck.c:1055:27: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("%s is linked to %u)\n", printable_name, dp->d_inum);
+                                ~^                      ~~~~~~~~~~
+                                %lu
+fsck.c:1066:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register n = MFS_NAME_MAX + 1;
+  ~~~~~~~~ ^
+fsck.c:1097:23: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("ino found = %u, ", dp->d_inum);
+                            ~^     ~~~~~~~~~~
+                            %lu
+fsck.c:1108:33: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("too many links to ino %u\n", dp->d_inum);
+                                      ~^     ~~~~~~~~~~
+                                      %lu
+fsck.c:1131:24: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("', dir ino = %u)", dp->d_inum);
+                             ~^    ~~~~~~~~~~
+                             %lu
+fsck.c:1144:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register n, dirty;
+  ~~~~~~~~ ^
+fsck.c:1144:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register n, dirty;
+  ~~~~~~~~    ^
+fsck.c:1213:19: warning: conversion specifies type 'long' but the argument has type 'zone_t' (aka 'unsigned int') [-Wformat]
+  printf("zno = %ld, type = ", zno);
+                ~~^            ~~~
+                %u
+fsck.c:1255:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register n = NR_INDIRECTS / CINDIR;
+  ~~~~~~~~ ^
+fsck.c:1303:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register ok = 1, i;
+  ~~~~~~~~ ^
+fsck.c:1303:20: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register ok = 1, i;
+  ~~~~~~~~         ^
+fsck.c:1323:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register ok, i, level;
+  ~~~~~~~~ ^
+fsck.c:1323:16: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register ok, i, level;
+  ~~~~~~~~     ^
+fsck.c:1323:19: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register ok, i, level;
+  ~~~~~~~~        ^
+fsck.c:1335:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register ok;
+  ~~~~~~~~ ^
+fsck.c:1364:43: warning: conversion specifies type 'long' but the argument has type 'i32_t' (aka 'int') [-Wformat]
+                printf("symbolic link too large (size %ld) ", ip->i_size);
+                                                      ~~^     ~~~~~~~~~~
+                                                      %d
+fsck.c:1380:34: warning: conversion specifies type 'long' but the argument has type 'zone_t' (aka 'unsigned int') [-Wformat]
+        printf("illegal device number %ld for special file ", ip->i_zone[0]);
+                                      ~~^                     ~~~~~~~~~~~~~
+                                      %u
+fsck.c:1390:33: warning: conversion specifies type 'long' but the argument has type 'zone_t' (aka 'unsigned int') [-Wformat]
+                printf("nonzero zone number %ld for special file ",
+                                            ~~^
+                                            %u
+fsck.c:1439:18: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("(ino = %u, mode = %o)\n", ino, ip->i_mode);
+                       ~^                 ~~~
+                       %lu
+fsck.c:1467:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register visited;
+  ~~~~~~~~ ^
+fsck.c:1474:23: warning: conversion specifies type 'unsigned int' but the argument has type 'ino_t' (aka 'unsigned long') [-Wformat]
+        printf("found inode %u: ", ino);
+                            ~^     ~~~
+                            %lu
+fsck.c:1515:55: warning: conversion specifies type 'int' but the argument has type 'long' [-Wformat]
+        printf("%d files, %d directories, %d free inodes, %d free zones\n",
+                                                          ~^
+                                                          %ld
+fsck.c:1631:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+  register devgiven = 0;
+  ~~~~~~~~ ^
+46 warnings and 1 error generated.
